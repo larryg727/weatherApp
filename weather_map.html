@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map App</title>
+    <link rel="stylesheet" href="css/weather_map.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="appContainer">
+    <div id="cloudBack">
+        <h1>Weather Application</h1>
+
+        <h2 id="currentCity"></h2>
+    </div>
+
+    <div id="searchContainer">
+        <div id="leftSearch" class="search">
+            <label for="search">Search for location:</label>
+            <input type="text" id="search" value="">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="rightSearch" class="search">
+            <label for="lat">Latitude</label>
+            <input type="text" id="lat" value="29.426803">
+            <label for="lng">Longitude</label>
+            <input type="text" id="lng" value="-98.489273">
+            <button id="locSubmit">Update</button>
+        </div>
+    </div>
+
+    <div id="weatherContainer">
+
+        <div id="selectorTabs">
+            <ul id="daySelector">
+                <li id="today">Today</li>
+                <li id="threeDay">3 Day</li>
+                <li id="fiveDay">5 Day</li>
+                <li id="tenDay">10 Day</li>
+            </ul>
+        </div>
+
+        <div id="weatherBoxes">
+            <div class="weatherBoxDivs todayBox">
+                <h2>Today's Weather</h2>
+                <div class="todayInfo" id="todayLeft"></div>
+                <div class="todayInfo" id="todayCenter"></div>
+                <div class="todayInfo" id="todayRight"></div>
+            </div>
+            <div class="weatherBoxDivs threeDayBox fiveDayBox tenDayBox active three" id="day0"></div>
+            <div class="weatherBoxDivs threeDayBox fiveDayBox tenDayBox active three" id="day1"></div>
+            <div class="weatherBoxDivs threeDayBox fiveDayBox tenDayBox active three" id="day2"></div>
+            <div class="weatherBoxDivs fiveDayBox tenDayBox" id="day3"></div>
+            <div class="weatherBoxDivs fiveDayBox tenDayBox" id="day4"></div>
+            <div class="weatherBoxDivs tenDayBox" id="day5"></div>
+            <div class="weatherBoxDivs tenDayBox" id="day6"></div>
+            <div class="weatherBoxDivs tenDayBox" id="day7"></div>
+            <div class="weatherBoxDivs tenDayBox" id="day8"></div>
+            <div class="weatherBoxDivs tenDayBox" id="day9"></div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrAa4WKQBvUJMS6mVty9WE7xaOU9dV64Q"></script>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/weather_map.js"></script>
+</body>
+</html>

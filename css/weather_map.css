@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #A3CCFF;
+    text-align: center;
+    font-family: 'Baloo', cursive;
+}
+#appContainer {
+    width: 95%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+#cloudBack{
+    background-image: url("../../Codeup-web-exercises/img/cloud.png");
+    background-repeat: no-repeat;
+    background-size: 60% 105%;
+    background-position: center;
+}
+#weatherContainer {
+    background-color: darkblue;
+    margin: 0 auto;
+    width: 90%;
+}
+.weatherBoxDivs {
+    background-color: #ffffff;
+    text-align: center;
+    border-bottom: 2px solid #b0b0b0;
+    display: none;
+    border-right: 2px solid #b0b0b0;
+    margin-right: -4px;
+}
+.three {
+    width: 30%;
+}
+.fiveTens {
+    width: 19%;
+}
+
+.active{
+    display: inline-block !important;
+}
+.todayBox {
+    width: 95%;
+    text-align: center;
+    border-bottom: 2px solid #b0b0b0;
+    margin: 0 auto;
+    display: none;
+    background: #fff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #fff , #A3CCFF); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #fff, #A3CCFF); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #fff, #A3CCFF); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #fff , #A3CCFF); /* Standard syntax */
+
+}
+
+p {
+    font-size: .85em;
+    margin: 8px auto;
+}
+#map {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 4.5vw;
+    color: #A3CCFF;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+h2 {
+    font-size: 3.2vw;
+    margin: 0 auto;
+    color: #00008B;
+}
+.search{
+    display: inline-block;
+}
+#leftSearch {
+    text-align: left;
+    width: 44%;
+}
+#rightSearch {
+    text-align: right;
+    width: 54%;
+}
+#searchContainer{
+    width: 80%;
+    margin: 0 auto;
+    color: #00008B;
+}
+#daySelector {
+    color: #fff;
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    margin: 0 0 5px 0;
+}
+#daySelector>li {
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 15%;
+    min-width: 60px;
+    padding: 5px 0;
+    display: inline-block;
+    margin: 0 3%;
+    border-bottom: 2px solid #fff;
+    border-right: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+#daySelector>li:hover {
+    background: white; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#00008B, #fff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#00008B, #fff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#00008B, #fff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#00008B, #fff); /* Standard syntax */
+    color: #00008B;
+}
+.todayBox>h3{
+    margin: 0 300px 0 0;
+}
+.todayInfo>img {
+    width: 100px;
+    height: 100px;
+}
+.todayInfo{
+    display: inline-block;
+    width: 30%;
+}
+#todayLeft, #todayCenter {
+   vertical-align: top;
+}
+.todayInfo>p {
+    font-size: 1em;
+    margin: 0 0 18px 0;
+}
+.todayInfo>h3{
+    font-size: 1.4em;
+}
+#todayRight>h3{
+    margin: 0 auto;
+}
+#todayLeft>h3{
+    margin: 0 0 24px 0;
+}
+.weatherBoxDivs h2{
+    font-size: 1.6em;
+}
+.todayBox h2 {
+    font-size: 2em;
+}
+h3 {
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1180px){
+    #rightSearch{
+        display: none;
+    }
+    #leftSearch{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 1000px){
+    #cloudBack{
+        background-image: none;
+    }
+    h1{
+        font-size: 6vw;
+        color: white;
+        outline-color: #00008B;
+    }
+    h2{
+        font-size: 4vw;
+    }
+}
+@media screen and (max-width: 840px){
+    .weatherBoxDivs h2{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 720px){
+    .fiveTens{
+        width: 30%;
+    }
+    .weatherBoxDivs h2{
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 10vw;
+    }
+    h2 {
+        font-size: 7vw;
+    }
+    #appContainer{
+        width: 100%;
+    }
+    #weatherContainer{
+        width: 100%;
+    }
+    #map{
+        width: 100%;
+    }
+    .three{
+       width: 80%;
+    }
+    .fiveTens{
+       width: 45%;
+    }
+    #daySelector>li {
+        margin: 0 2%;
+    }
+}
