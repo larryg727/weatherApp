@@ -20,7 +20,7 @@ $(document).ready(function () {
     var daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     function loadWeather() {
-        $.get("//api.openweathermap.org/data/2.5/forecast/daily", {
+        $.get("http://api.openweathermap.org/data/2.5/forecast/daily", {
             APPID: "a824ef2e2591bd239228beab33789010",
             lat: lat,
             lon: lng,
