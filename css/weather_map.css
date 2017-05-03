@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
 }
 #cloudBack{
-    background-image: url("../../Codeup-web-exercises/img/cloud.png");
+    background-image: url("/img/cloud.png");
     background-repeat: no-repeat;
     background-size: 60% 105%;
     background-position: center;
